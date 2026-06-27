@@ -1,0 +1,405 @@
+/* ================= BASIC ================= */
+
+*{
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+
+    margin:0;
+    min-height:100vh;
+
+    background:#f4f7fb;
+    color:#222;
+
+    transition:0.3s;
+
+}
+
+
+
+.app{
+
+    width:90%;
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:30px;
+
+}
+
+
+
+
+
+/* ================= HEADER ================= */
+
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+
+
+h1{
+
+    font-size:40px;
+
+}
+
+
+
+
+.settings button{
+
+    padding:12px 18px;
+
+    margin-left:10px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:#111827;
+
+    color:white;
+
+}
+
+
+
+
+
+/* ================= DASHBOARD ================= */
+
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.card,
+.planner,
+.timer,
+.ai-box{
+
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px #0001;
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+/* ================= TASKS ================= */
+
+
+.planner{
+
+    margin-top:30px;
+
+}
+
+
+
+input{
+
+
+    width:70%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+
+}
+
+
+
+.planner button,
+.timer button,
+.ai-box button{
+
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:#2563eb;
+
+    color:white;
+
+
+}
+
+
+
+
+
+li{
+
+
+    margin-top:15px;
+
+    padding:12px;
+
+    background:#eee;
+
+    border-radius:10px;
+
+
+}
+
+
+
+
+
+
+/* ================= TIMER ================= */
+
+
+
+.timer{
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+
+
+.timer h1{
+
+    font-size:45px;
+
+}
+
+
+
+
+
+
+
+/* ================= AI ================= */
+
+
+.ai-box{
+
+
+    margin-top:30px;
+
+
+}
+
+
+
+.ai-box textarea{
+
+
+    width:100%;
+
+    height:130px;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    border:1px solid #ddd;
+
+    resize:none;
+
+
+}
+
+
+
+.ai-box button{
+
+
+    margin-top:15px;
+
+    background:#7c3aed;
+
+
+}
+
+
+
+#aiResult{
+
+
+    margin-top:20px;
+
+    padding:15px;
+
+    background:#eee;
+
+    border-radius:15px;
+
+
+}
+
+
+
+
+
+
+
+/* ================= DARK MODE ================= */
+
+
+.dark{
+
+
+    background:#111827;
+
+    color:white;
+
+}
+
+
+
+
+
+.dark .card,
+.dark .planner,
+.dark .timer,
+.dark .ai-box{
+
+
+    background:#1f2937;
+
+
+}
+
+
+
+.dark li,
+.dark #aiResult{
+
+
+    background:#374151;
+
+
+}
+
+
+
+.dark input,
+.dark textarea{
+
+
+    background:#111827;
+
+    color:white;
+
+    border:1px solid #555;
+
+
+}
+
+
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:700px){
+
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+
+header{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+
+input{
+
+width:100%;
+
+}
+
+
+
+}
+.ai-box h2{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+
+.ai-box button{
+    padding:12px 20px;
+    border:none;
+    border-radius:12px;
+    color:white;
+    cursor:pointer;
+    background:#7c3aed;
+    margin:10px;
+}
+
+
+.ai-box button:hover{
+    transform:translateY(-2px);
+}
+
+
+#aiResult{
+    min-height:80px;
+    line-height:1.7;
+}

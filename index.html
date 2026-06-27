@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Focus AI</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+
+<header>
+
+
+<div>
+
+<h1 id="title">
+Focus AI
+</h1>
+
+
+<p id="subtitle">
+Your smart study assistant
+</p>
+
+
+</div>
+
+
+
+
+<div class="settings">
+
+
+<button onclick="changeTheme()">
+🌙 Theme
+</button>
+
+
+
+<button onclick="changeLanguage()">
+🌐 AR / EN
+</button>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+<section class="stats">
+
+
+
+<div class="card">
+
+<h2 id="subjects">
+Subjects
+</h2>
+
+<p>
+6
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2 id="focus">
+Focus Time
+</h2>
+
+
+<p id="focusHours">
+0 Hours
+</p>
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+<h2 id="progress">
+Progress
+</h2>
+
+
+<p id="progressNumber">
+0%
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="planner">
+
+
+<h2 id="planTitle">
+Today's Plan
+</h2>
+
+
+
+
+<input 
+
+id="taskInput"
+
+placeholder="Add study task">
+
+
+
+
+
+<button onclick="addTask()" id="addBtn">
+
+Add
+
+</button>
+
+
+
+
+
+<ul id="tasks"></ul>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="timer">
+
+
+<h2>
+⏱ Study Timer
+</h2>
+
+
+
+
+<h1 id="time">
+
+00:00:00
+
+</h1>
+
+
+
+
+<button onclick="startTimer()">
+
+Start
+
+</button>
+
+
+
+
+<button onclick="pauseTimer()">
+
+Pause
+
+</button>
+
+
+
+
+
+<button onclick="resetTimer()">
+
+Reset
+
+</button>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- AI ASSISTANT -->
+
+
+<section class="ai-box">
+
+
+<h2>
+🤖 AI Study Assistant
+</h2>
+
+
+
+
+<textarea 
+
+id="aiInput"
+
+placeholder="Write your lesson, ask a question, or paste notes...">
+
+</textarea>
+
+
+
+
+
+<div class="ai-buttons">
+
+
+<button onclick="explainLesson()">
+
+📚 Explain
+
+</button>
+
+
+
+
+
+<button onclick="summarizeLesson()">
+
+📝 Summary
+
+</button>
+
+
+
+
+
+<button onclick="makeQuiz()">
+
+❓ Quiz
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+<div id="aiResult">
+
+AI response will appear here
+
+</div>
+
+
+
+</section>
